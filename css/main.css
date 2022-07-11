@@ -1,0 +1,308 @@
+html body {
+    background-color: beige;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.header > h1 {
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.header {
+    background-color: firebrick;
+    color: white;
+}
+
+p {
+    font-size: 17px;
+
+}
+
+/*h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: crimson;
+    margin: 0;
+}*/
+.topnav {
+    overflow: visible;
+    background-color: #333;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+/*.topnav {
+    /*overflow: hidden;*/
+/* nu mai arata dropdown-ul!!!*/
+/* background-color: #333;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}*/
+
+.topnav ul {
+    margin: 0;
+    list-style-type: none;
+    border-right: 1px dashed #333333;
+}
+
+.topnav ul li {
+    float: left;
+    /* list-style-type: none;
+    border-right: 1px dashed #333333;*/
+}
+
+/*.topnav ul li:last-child {
+    border-right: none;
+}
+*/
+.topnav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    padding: 21px 16px;
+    border-radius: 10px;
+}
+
+.topnav ul li a:hover {
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid firebrick;
+}
+
+.topnav ul li a.active {
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid firebrick;
+
+}
+
+.row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.col-md-6 {
+    column-fill: balance;
+}
+
+.prim {
+    /*background-color: darkgrey;*/
+    /* border-radius: 10px;*/
+    padding: 20px;
+}
+
+.prim > img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.prim > img:hover {
+    box-shadow: 2px 3px 3px 4px #888888;
+}
+
+.second > img {
+    border-radius: 10px;
+    margin-left: 50px;
+    max-height: 70%;
+    max-width: 70%;
+    object-fit: contain;
+}
+
+.second > img:hover {
+    box-shadow: 2px 3px 3px 4px #888888;
+}
+
+.buton > a {
+    display: inline-block;
+    padding: 16px 20px;
+    background-color: dodgerblue;
+    color: floralwhite;
+    border-radius: 10px;
+
+}
+
+.buton > a:hover {
+    text-decoration: none;
+    background-color: crimson;
+}
+
+/*.col2 {
+    background-color: darkgray;
+    border-radius: 20px;
+}
+
+.newspaper {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex-container > div {
+    background-color: DodgerBlue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 20px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border: 1px solid #ddd;
+}
+
+.pagination a:hover {
+    color: crimson;
+}
+
+.pagination a.active {
+    background-color: blue;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+*/
+.dropbtn {
+    background-color: #333333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* display: inline-block;*/
+}
+
+/*li.dropdown {
+    display: inline-block;
+}*/
+/*div-ul in care sunt plasate link-urile dropdown*/
+.dropdown {
+    position: relative;
+    min-width: 150px;
+}
+
+/*continutul dropdown propriu-zis*/
+.dropdown-content {
+    display: none;
+    /*nu este afisat decat dupa hover*/
+    position: absolute;
+    background-color: #333333;
+    min-width: inherit;
+    /*mosteneste atributul de la .dropdown*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /*ca sa apara deasupra textului*/
+    border-radius: 13px;
+}
+
+dropdown-content a {
+    display: block;
+    text-align: left;
+}
+
+/*.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+*/
+/*sa apara link-urile cand apasam pe dropdown*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*.dropdown:hover .dropdown-content a:hover {
+    background-color: black;
+    color: white;
+} nu mai e necesar pt ca am setat culoare de fundal si culoare pt link-uri in lista
+*/
+.dropdown:hover .dropbtn {
+    background-color: black;
+    /*tine dropbtn negru cand apasam pe link-urile dropdown*/
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 17px 0px;
+    /* background-color: #f0eae9;*/
+    background-color: aliceblue;
+    color: #aaa;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    display: inline-block;
+    background-color: aliceblue;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: red;
+    color: white;
+    /*border-radius: 5px;*/
+}
+
+.pagination a:hover {
+    background-color: lightgray;
+    color: white;
+    /*border-radius: 5px;*/
+}
